@@ -22,5 +22,12 @@
 |Finish time|2:23 PM|
 |Actual time needed to complete|53 minutes|
 
+|Retrieve latitude and longitude||
+|---|---|
+|Estimate of time needed to complete|1 hour|
+|Start time|1:30 PM|
+|Finish time|2:23 PM|
+|Actual time needed to complete|53 minutes|
+
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
