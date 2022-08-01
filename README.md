@@ -14,9 +14,13 @@
 ![web request-response cycle](https://drive.google.com/file/d/1WEFXPBRqMY3SyXnAmwovbx8Q8F85OjnD/view?usp=sharing)
 
 ## Change Log
-<!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
-01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
+|Set up your React repository & API keys||
+|---|---|
+|Estimate of time needed to complete|45 minutes|
+|Start time|1:30 PM|
+|Finish time|2:23 PM|
+|Actual time needed to complete|53 minutes|
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
