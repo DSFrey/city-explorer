@@ -40,8 +40,8 @@
 |---|---|
 |Estimate of time needed to complete|30 minutes|
 |Start time|9:40 PM|
-|Finish time|9:40 PM|
-|Actual time needed to complete|1 hours, 25 minutes|
+|Finish time|10:15 PM|
+|Actual time needed to complete|35 minutes|
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
