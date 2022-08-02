@@ -25,9 +25,9 @@
 |Retrieve latitude and longitude||
 |---|---|
 |Estimate of time needed to complete|1 hour|
-|Start time|1:30 PM|
-|Finish time|2:23 PM|
-|Actual time needed to complete|53 minutes|
+|Start time|2:30 PM|
+|Finish time|4:40 PM|
+|Actual time needed to complete|2 hours, 10 minutes|
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
