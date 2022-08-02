@@ -1,38 +1,43 @@
-.App {
+body {
+  background-image: url('./img/landscape-morning-leaf.jpg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #233326;
+}
+h1 {
+  margin: 20px;
+  text-align: center;
+  color: white
+}
+main {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+}
+form {
+  margin: 20px;
+}
+.input
+.form-control {
+  background-color: white;
+}
+.btn-primary {
+  background-color: forestgreen;
+  border-color: white;
+}
+.btn-primary:hover {
+  border-color: white;
+}
+
+.card {
+  margin: 20px;
+  background-color: #a1d4e5;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.badge {
+  margin: 0 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+footer {
+  text-align: center;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
