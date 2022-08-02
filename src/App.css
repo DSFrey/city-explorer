@@ -34,6 +34,9 @@ form {
   background-color: #a1d4e5;
   text-align: center;
 }
+.badge {
+  margin: 0 30px;
+}
 footer {
   text-align: center;
   color: white;

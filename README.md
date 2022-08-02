@@ -26,8 +26,22 @@
 |---|---|
 |Estimate of time needed to complete|1 hour|
 |Start time|2:30 PM|
-|Finish time|4:40 PM|
-|Actual time needed to complete|2 hours, 10 minutes|
+|Finish time|4:45 PM|
+|Actual time needed to complete|2 hours, 15 minutes|
+
+|Retrieve map, improve CSS||
+|---|---|
+|Estimate of time needed to complete|1.5 hour|
+|Start time|4:45 PM|
+|Finish time|9:40 PM|
+|Actual time needed to complete|1 hours, 25 minutes|
+
+|Error message||
+|---|---|
+|Estimate of time needed to complete|30 minutes|
+|Start time|9:40 PM|
+|Finish time|9:40 PM|
+|Actual time needed to complete|1 hours, 25 minutes|
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
