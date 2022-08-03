@@ -11,7 +11,7 @@
 
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
-![web request-response cycle](https://drive.google.com/file/d/1WEFXPBRqMY3SyXnAmwovbx8Q8F85OjnD/view?usp=sharing)
+![web request-response cycle](https://drive.google.com/file/d/1h7qL_9B9WuB9aYEv0g7KfYmfX1qStBri/view?usp=sharing)
 
 ## Change Log
 
