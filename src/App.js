@@ -58,7 +58,7 @@ class App extends React.Component {
       })
     }
     try {
-      let forecastURL = `${process.env.REACT_APP_SERVER_KEY}forecast?search=${this.state.searchEntry}&lat=${locationData.data[0].lat}lon=${locationData.data[0].lon}`;
+      let forecastURL = `${process.env.REACT_APP_SERVER_KEY}forecast?lat=${locationData.data[0].lat}&lon=${locationData.data[0].lon}`;
       let forecastReturn = await axios.get(forecastURL);
       this.setState({
         forecast: forecastReturn,

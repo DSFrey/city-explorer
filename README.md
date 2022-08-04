@@ -43,5 +43,12 @@
 |Finish time|10:15 PM|
 |Actual time needed to complete|35 minutes|
 
+|Weather info live||
+|---|---|
+|Estimate of time needed to complete|45 minutes|
+|Start time|6:00 PM|
+|Finish time|8:45 PM|
+|Actual time needed to complete|2 hours 45 minutes|
+
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->

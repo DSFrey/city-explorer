@@ -36,7 +36,18 @@ form {
 }
 #forecast {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#forecast .card {
+  align-items: center;
+  margin: 5px;
+}
+#forecast img {
+  width: 7rem;
+}
+#temperature-container {
+  display: flex;
 }
 .badge {
   margin: 0 30px;

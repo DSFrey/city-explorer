@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Badge } from 'react-bootstrap';
+import { Card, Badge, Col } from 'react-bootstrap';
 
 class Weather extends React.Component {
   render() {
@@ -9,7 +9,21 @@ class Weather extends React.Component {
           return (
             <Card key={index}>
               <Card.Title>{day.date}</Card.Title>
-              <Card.Body>{day.description}</Card.Body>
+              <Card.Img src={day.icon} />
+              <Card.Body>
+                <Card.Text>{day.description}</Card.Text>
+                <div id='temperature-container'>
+                  <Col>
+                    <h3>Low</h3>
+                    <Card.Text>{day.low}°</Card.Text>
+                  </Col>
+                  <Col>
+                    <h3>High</h3>
+                    <Card.Text>{day.high}°</Card.Text>
+                  </Col>
+                </div>
+                <Card.Text>{day.rain}% chance of precipitation</Card.Text>
+              </Card.Body>
             </Card>
           );
         })
