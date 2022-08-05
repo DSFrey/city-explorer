@@ -34,7 +34,7 @@ form {
   background-color: #a1d4e5;
   text-align: center;
 }
-#forecast {
+#forecast, #movies {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -48,6 +48,10 @@ form {
 }
 #temperature-container {
   display: flex;
+}
+#movies .card {
+  width: 310px;
+  margin: 5px;
 }
 .badge {
   margin: 0 30px;
