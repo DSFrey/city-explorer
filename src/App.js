@@ -3,6 +3,7 @@ import React from 'react';
 import { Button, Card, Form, InputGroup, Badge } from 'react-bootstrap';
 import axios from "axios";
 import Weather from './Weather';
+import Movies from './Movies';
 
 class App extends React.Component {
   constructor(props) {
@@ -21,7 +22,12 @@ class App extends React.Component {
       forecast: { data: [] },
       showWeather: false,
       weatherError: false,
-      weatherErrorMessage: ''
+      weatherErrorMessage: '',
+      //Movie variables
+      movieData: { data: [] },
+      showMovies: false,
+      movieError: false,
+      movieErrorMessage: ''
     };
   }
 
@@ -33,6 +39,7 @@ class App extends React.Component {
 
   submitLocationHandler = async (event) => {
     event.preventDefault();
+    this.movieSearchHandler();
     let locationData
     try {
       let requestURL = `https://us1.locationiq.com/v1/search?key=${process.env.REACT_APP_LOCATION_IQ_KEY}&q=${this.state.searchEntry}&format=json`;
@@ -58,7 +65,7 @@ class App extends React.Component {
       })
     }
     try {
-      let forecastURL = `${process.env.REACT_APP_SERVER_KEY}forecast?search=${this.state.searchEntry}&lat=${locationData.data[0].lat}lon=${locationData.data[0].lon}`;
+      let forecastURL = `${process.env.REACT_APP_SERVER_KEY}forecast?lat=${locationData.data[0].lat}&lon=${locationData.data[0].lon}`;
       let forecastReturn = await axios.get(forecastURL);
       this.setState({
         forecast: forecastReturn,
@@ -75,6 +82,26 @@ class App extends React.Component {
         weatherErrorMessage: `${error.message}: ${error.response.data}`,
       })
     }
+  }
+
+  movieSearchHandler = () => {
+    let movieURL = `${process.env.REACT_APP_SERVER_KEY}movies`
+    let params = {searchQuery: this.state.searchEntry}
+    axios.get(movieURL,{params})
+    .then(data => this.setState({
+      movieData: data,
+      showMovies: true,
+      movieError: false,
+      movieErrorMessage: ''
+    }))
+    .catch(error => {
+      console.log(error);
+      this.setState({
+      movieData: { data: [] },
+      showMovies: false,
+      movieError: true,
+      movieErrorMessage: `${error.message}: ${error.response.data.code}`
+    });})
   }
 
   render() {
@@ -98,6 +125,7 @@ class App extends React.Component {
           </Card>
           <Badge bg='danger' hidden={this.state.locationSuccessful} >{this.state.locationErrorMessage}</Badge>
           <Weather showWeather={this.state.showWeather} weatherError={this.state.weatherError} weatherErrorMessage={this.state.weatherErrorMessage} forecast={this.state.forecast} />
+          <Movies showMovies={this.state.showMovies} movieError={this.state.movieError} movieErrorMessage={this.state.movieErrorMessage} movieData={this.state.movieData}/>
         </main>
         <footer>&copy;2022 Daniel Frey</footer>
       </div>

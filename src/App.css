@@ -34,9 +34,24 @@ form {
   background-color: #a1d4e5;
   text-align: center;
 }
-#forecast {
+#forecast, #movies {
   display: flex;
-  justify-content: space-evenly;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#forecast .card {
+  align-items: center;
+  margin: 5px;
+}
+#forecast img {
+  width: 7rem;
+}
+#temperature-container {
+  display: flex;
+}
+#movies .card {
+  width: 310px;
+  margin: 5px;
 }
 .badge {
   margin: 0 30px;

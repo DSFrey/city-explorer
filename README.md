@@ -11,7 +11,7 @@
 
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
-![web request-response cycle](https://drive.google.com/file/d/1h7qL_9B9WuB9aYEv0g7KfYmfX1qStBri/view?usp=sharing)
+![web request-response cycle](./src/img/city-explorer-wrrc.drawio.png)
 
 ## Change Log
 
@@ -42,6 +42,13 @@
 |Start time|9:40 PM|
 |Finish time|10:15 PM|
 |Actual time needed to complete|35 minutes|
+
+|Weather info live||
+|---|---|
+|Estimate of time needed to complete|45 minutes|
+|Start time|6:00 PM|
+|Finish time|8:45 PM|
+|Actual time needed to complete|2 hours 45 minutes|
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
